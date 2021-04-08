@@ -1,0 +1,46 @@
+{
+    "name": "liwanmin/redis-lbs",
+    "description": "Laravel extension for redis lbs.",
+    "keywords": [
+        "laravel",
+        "redis",
+        "lbs"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liwanmin",
+            "email": "627632410@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "illuminate/support": "^5.7.15 | 5.8.* | ^6.0 | ^7.0 | ^8.0"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0 | ^8.0",
+        "predis/predis": "^1.1",
+        "orchestra/testbench": "6.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liwanmin\\RedisLbs\\": "src/Liwanmin/RedisLbs/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Liwanmin\\RedisLbs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liwanmin\\RedisLbs\\RedisLbsProvider"
+            ],
+            "aliases": {
+                "RedisLbs": "Liwanmin\\RedisLbs\\Facades\\RedisLbs"
+            }
+        }
+    }
+}
