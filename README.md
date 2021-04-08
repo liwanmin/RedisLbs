@@ -3,7 +3,7 @@
 
 
 ```shell
-composer require liwnamin/redis-lbs
+composer require liwanmin/redis-lbs
 ```
 更新你的依赖包 composer update 或者全新安装 composer install。
 
