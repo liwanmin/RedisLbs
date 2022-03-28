@@ -42,5 +42,7 @@
                 "RedisLbs": "Liwanmin\\RedisLbs\\Facades\\RedisLbs"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
